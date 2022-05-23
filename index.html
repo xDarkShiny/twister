@@ -11,13 +11,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/e795745585.js" crossorigin="anonymous"></script>
 </head>
 <style>
   .text-style {
-  font-family: 'Poppins', sans-serif;
-  }
+    font-family: 'Inter', sans-serif;
+    }
   .text-style2 {
     font-family: 'Source Sans Pro', sans-serif;
    }
@@ -33,7 +33,7 @@
  
 </style>
 <body class="background-color">
-        <div class="card-color fixed top-0 inset-x-0 shadow-xl flex flex-row z-40 w-full h-20 border-b p-3 items-center border-white/40">
+        <div class="card-color containter mx-auto fixed top-0 inset-x-0 shadow-xl flex flex-row z-40 w-full h-20 border-b p-3 items-center border-white/40">
             <a href="" class="text-style font-extrabold grow flex-none text-4xl  text-white/80">twister</a>
             <form class="flex  grow items-center ">
             <input type="search" class="card-color lg:block hidden  border-y-2 border-l-2 ml-60 border-white/20 text-white p-1 rounded-l-lg">
@@ -104,8 +104,8 @@
             </div>
       </div>
       </div>  
-  <div class="flex flec-col justify-center mt-24 items-center">
-        <div class="flex flex-wrap justify-center items-center gap-1">
+  <div class="flex flex-col justify-center items-center">
+        <div class="flex sm:absolute inset-x-0 top-24 flex-wrap justify-center items-center gap-1">
             <a href="#" class="text-style p-2 card-color rounded-lg transition hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ease-in text-white/80">Anasayfa</a>
             <a href="#" class="text-style p-2 card-color rounded-lg transition hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ease-in text-white/80">Flimler</a>
             <a href="#" class="text-style p-2 card-color rounded-lg transition hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ease-in text-white/80">Diziler</a>
@@ -113,14 +113,28 @@
             <a href="#" class="text-style p-2 card-color rounded-lg transition hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ease-in text-white/80">Keşfet</a>
         </div>
   </div>
+<div class="w-full sm:mt-20 sm:p-32 p-2 justify-center items-center space-y-3 flex-col bg-center bg-cover flex " style="background-image: url(https://pbs.twimg.com/media/C6gy4qkVsAA9out.jpg);">
+  <h1 class="text-style font-extrabold text-white sm:text-5xl text-xl">Fight Club</h1>
+  <h2 class="text-style text-white/80 sm:text-xl ">Oregon Üniversitesi'nde yüksek lisansını yapan Chuck Palahniuk'un uzak olmayan bir gelecekte geçen ve kafası karışık genç bir erkeği konu alan...</h2>
+  <a class="flex items-center space-x-2"> 
+    <img class="w-7" src="img/star.svg">
+    <h1 class="text-style text-white/80 mt-1 text-2xl">9.4</h1>
+  </a> 
+<a class="rounded-lg text-xl">
+  <a class="text-style items-center flex space-x-2 p-2 card-color text-xl rounded-lg transition hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ease-in text-white/80">
+    <img class="w-7" src="img/film.svg">
+    <h1>İzle</h1>
+  </a>
+</a>
+</div>
   <div class="min-h-screen justify-center items-center space-y-4 p-12">
     <a class="text-white/80 font-bold text-2xl">Belgeseller</a>
  <div class="flex flex-wrap gap-4 items-center"> 
   <div class="w-60 relative group">
-    <img class="rounded-lg h-80" src="https://i.pinimg.com/originals/ab/d7/33/abd733c93545047e5162e5d897741819.jpg" />
-    <a href="#" class="opacity-0 drop-shadow-lg rounded-lg group-hover:bg-opacity-90 group-hover:opacity-100 w-full h-80 duration-300 absolute inset-x-0 bottom-0 flex flex-col space-y-2 justify-center items-center  bg-black">
-      <h1 class="text-style text-left text-white text-2xl">Chernobly</h1>
-      <h2 class="text-style text-center text-white/80 text-lg">Chernobyl, 1986 yılında Ukrayna’da Çernobil nükleer santralindeki patlama ve sonrasında yaşananları anlatıyor. İnsanlık tarihinin gördüğü en büyük nükleer..</h2>
+    <img class="rounded-lg h-80 w-56" src="https://i.pinimg.com/originals/ab/d7/33/abd733c93545047e5162e5d897741819.jpg" />
+    <a href="" class="opacity-0 drop-shadow-lg rounded-lg group-hover:bg-opacity-90 group-hover:opacity-100 w-56 h-80 duration-300 absolute inset-x-0 bottom-0 flex flex-col space-y-2 justify-center items-center  bg-black">
+      <h1 class="text-style text-left text-white text-xl">Chernobly</h1>
+      <h2 class="text-style text-center text-white/80 text-lg">Chernobyl, 1986 yılında Ukrayna’da Çernobil nükleer santralindeki patlama ve sonrasında yaşananları anlatıyor...</h2>
     <span class="flex items-center space-x-2"> 
       <img class="w-7" src="img/star.svg">
       <h1 class="text-style text-white/80 mt-1 text-2xl">9.4</h1>
@@ -128,9 +142,9 @@
     </a>
   </div>
   <div class="w-60 relative group">
-    <img class="rounded-lg h-80" src="https://bonetflix.com/img/4c0fc516-add8-3885-b174-11c0f870b4ba.webp" />
-    <a href="#" class="opacity-0 drop-shadow-lg rounded-lg group-hover:bg-opacity-90 group-hover:opacity-100 w-full h-80 duration-300 absolute inset-x-0 bottom-0 flex flex-col space-y-2 justify-center items-center  bg-black">
-      <h1 class="text-style text-left text-white text-2xl">Fight Club</h1>
+    <img class="rounded-lg h-80 w-56" src="https://bonetflix.com/img/4c0fc516-add8-3885-b174-11c0f870b4ba.webp" />
+    <a href="" class="opacity-0 drop-shadow-lg rounded-lg group-hover:bg-opacity-90 group-hover:opacity-100 w-56 h-80 duration-300 absolute inset-x-0 bottom-0 flex flex-col space-y-2 justify-center items-center  bg-black">
+      <h1 class="text-style text-left text-white text-xl">Fight Club</h1>
       <h2 class="text-style text-center text-white/80 text-lg">Oregon Üniversitesi'nde yüksek lisansını yapan Chuck Palahniuk'un uzak olmayan bir gelecekte geçen ve kafası karışık genç bir erkeği konu alan...</h2>
     <span class="flex items-center space-x-2"> 
       <img class="w-7" src="img/star.svg">
@@ -139,10 +153,10 @@
     </a>
   </div>
   <div class="w-60 relative group">
-    <img class="rounded-lg h-80" src="https://m.media-amazon.com/images/M/MV5BZTM2ZGJmNjQtN2UyOS00NjcxLWFjMDktMDE2NzMyNTZlZTBiXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg" />
-    <a href="#" class="opacity-0 drop-shadow-lg rounded-lg group-hover:bg-opacity-90 group-hover:opacity-100 w-full h-80 duration-300 absolute inset-x-0 bottom-0 flex flex-col space-y-2 justify-center items-center  bg-black">
-      <h1 class="text-style text-left text-white text-2xl">American Pyscho</h1>
-      <h2 class="text-style text-center text-white/80 text-lg">Bret Easton Ellis'in "American Psycho" romanından uyarlanan, kan donduran bir psikolojik gerilim filmi. Erkeklerin cinsel...</h2>
+    <img class="rounded-lg h-80 w-56" src="https://images-na.ssl-images-amazon.com/images/I/71I1rRWXQeL.jpg" />
+    <a href="" class="opacity-0 drop-shadow-lg rounded-lg group-hover:bg-opacity-90 group-hover:opacity-100 w-56 h-80 duration-300 absolute inset-x-0 bottom-0 flex flex-col space-y-2 justify-center items-center  bg-black">
+      <h1 class="text-style text-left text-white text-xl">The Walking Dead</h1>
+      <h2 class="text-style text-center text-white/80 text-lg">The Walking Dead, aynı adlı çizgi roman serisine dayanmaktadır. Roman, dünya çapında beklenmedik bir biçimde ortaya çıkan esrarengiz bir...</h2>
     <span class="flex items-center space-x-2"> 
       <img class="w-7" src="img/star.svg">
       <h1 class="text-style text-white/80 mt-1 text-2xl">9.4</h1>
@@ -150,5 +164,6 @@
     </a>
   </div>
 </div>  
+</div>
 </body>
 </html>
