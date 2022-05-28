@@ -25,33 +25,31 @@
     background-color: #202020;
   }
   .background-color {
-    background-color: #0f0f0f;
+    background-color: #131112;
   }
   .card-color2 {
     background-color: #3a3a3a;
   }
-  .resim {
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+  .button-color {
+    background-color: #b3001b;
   }
  
 </style>
 <body class="background-color">
-        <div class="card-color containter mx-auto fixed top-0 inset-x-0 shadow-xl flex flex-row z-40 w-full h-16 p-3 items-center border-white/40">
-            <a href="index.html" class="text-style font-extrabold grow flex-none text-4xl  text-white/80">twister</a>
-            <form class="flex  grow items-center ">
-            <input type="search" class="card-color lg:block hidden  border-y-2 border-l-2 ml-32 border-white/20 text-white p-1 rounded-l-lg">
-            <lord-icon
-                src="https://cdn.lordicon.com/qehhcbpv.json"
-                trigger="hover"
-                colors="primary:#ffffff"
-                style="width:50px;height:36px"
-                class="bg-white/20 rounded-r-lg p-1 lg:block hidden ">
-            </lord-icon>
-            </form>
+        <div class="card-color containter mx-auto fixed top-0 inset-x-0 shadow-xl justify-between flex flex-row z-40 w-full h-16 p-3 items-center border-white/40">
+         <div class="flex items-center space-x-4"> 
+            <a href="index.html" class="text-style font-extrabold grow flex-none text-4xl  text-white">twister</a>
+           <div class="flex mt-1.5 sm:block hidden space-x-3">
+            <a class="text-style text-xl text-white/80 hover:text-white ">Anasayfa</a>
+            <a class="text-style text-xl text-white/80 hover:text-white ">Flimler</a>
+            <a class="text-style text-xl text-white/80 hover:text-white ">Diziler</a>
+            <a class="text-style text-xl text-white/80 hover:text-white ">Trendler</a>
+            <a class="text-style text-xl text-white/80 hover:text-white ">Keşfet</a>
+          </div>  
+         </div>    
             <div class="flex lg:block hidden space-x-3 ml-70 items-center">
-              <a href="#" class="text-xl text-style rounded-lg text-white/60 p-2"><i class="text-lg fa-solid fa-user-group"></i> Kayıt Ol</a>
-              <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-xl text-style rounded-lg text-white/60 p-2"><i class="text-lg fa-solid fa-user"></i> Giriş Yap</a>
+              <a class="text-white text-xl"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href="#" class="button-color text-lg text-style rounded-lg text-white p-2">Oturum Aç</a>
             </div>  
             <div class="flex lg:hidden block justify-center">
               <div>
@@ -109,24 +107,16 @@
       </div>
       </div>  
  <div class="sm:block hidden">    
-  <div class="flex flex-col justify-center items-center">
-        <div class="flex absolute inset-x-0 top-20 flex-wrap justify-center items-center gap-1">
-            <a href="#" class="text-style p-2 card-color rounded-lg transition hover:-translate-y-1 hover:scale-110 duration-300 ease-in text-white/80">Anasayfa</a>
-            <a href="#" class="text-style p-2 card-color rounded-lg transition hover:-translate-y-1 hover:scale-110 duration-300 ease-in text-white/80">Flimler</a>
-            <a href="#" class="text-style p-2 card-color rounded-lg transition hover:-translate-y-1 hover:scale-110 duration-300 ease-in text-white/80">Diziler</a>
-            <a href="#" class="text-style p-2 card-color rounded-lg transition hover:-translate-y-1 hover:scale-110 duration-300 ease-in text-white/80">Trendler</a>
-            <a href="#" class="text-style p-2 card-color rounded-lg transition hover:-translate-y-1 hover:scale-110 duration-300 ease-in text-white/80">Keşfet</a>
-        </div>
-  </div>
+
 </div>  
-<div class="w-full resim mt-16 sm:p-32 p-10 justify-center items-start space-y-3 flex-col bg-center bg-cover flex " style="background-image: url(https://media.discordapp.net/attachments/950623987258523698/980059119534886932/C6gy4qkVsAA9out.jpg);">
+<div class="w-full resim  mt-16 sm:p-32 p-10 justify-center items-start space-y-3 flex-col bg-center bg-cover flex " style="background-image: url(https://media.discordapp.net/attachments/950623987258523698/980059119534886932/C6gy4qkVsAA9out.jpg);">
 <a class="space-y-3"> 
   <h1 class="text-style text-left font-extrabold text-white sm:text-5xl text-xl">Fight Club</h1>
   <h2 class="text-style text-white/80 sm:text-xl ">Oregon Üniversitesi'nde yüksek lisansını yapan Chuck Palahniuk'un uzak olmayan bir gelecekte geçen ve kafası karışık genç bir erkeği konu alan...</h2>
   <a class="flex items-center space-x-2"> 
     <span class="text-lg text-white/40 ">1999 | +18 | Gerilim/Dram</span>
   </a> 
-  <a href="content/fightclub.html" class="bg-red-500/50 rounded-lg text-md text-black/70 text-style p-2">
+  <a href="content/fightclub.html" class="button-color rounded-lg text-md text-white text-style p-2">
     Daha Fazla...
   </a>
 </a>   
