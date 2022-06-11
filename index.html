@@ -36,20 +36,52 @@
  
 </style>
 <body class="background-color">
-        <div class="card-color containter mx-auto fixed top-0 inset-x-0 shadow-xl justify-between flex flex-row z-40 w-full h-16 p-3 items-center border-white/40">
+        <div class="card-color containter mx-auto fixed top-0 inset-x-0 shadow-xl justify-between flex flex-row z-40 w-full h-16 p-10 items-center border-white/40">
          <div class="flex items-center space-x-4"> 
             <a href="index.html" class="text-style font-extrabold grow flex-none text-4xl  text-white">twister</a>
-           <div class="flex mt-1.5 sm:block hidden space-x-3">
-            <a class="text-style text-xl text-white/80 hover:text-white ">Anasayfa</a>
-            <a class="text-style text-xl text-white/80 hover:text-white ">Flimler</a>
-            <a class="text-style text-xl text-white/80 hover:text-white ">Diziler</a>
-            <a class="text-style text-xl text-white/80 hover:text-white ">Trendler</a>
-            <a class="text-style text-xl text-white/80 hover:text-white ">Keşfet</a>
+           <div class="flex mt-1.5 sm:block hidden space-x-5">
+            <a class="text-style text-lg text-white/80 hover:text-white ">Anasayfa</a>
+            <a class="text-style text-lg text-white/80 hover:text-white ">Flimler</a>
+            <a class="text-style text-lg text-white/80 hover:text-white ">Diziler</a>
+            <a class="text-style text-lg text-white/80 hover:text-white ">Trendler</a>
+            <a class="text-style text-lg text-white/80 hover:text-white ">Keşfet</a>
           </div>  
          </div>    
             <div class="flex lg:block hidden space-x-3 ml-70 items-center">
-              <a class="text-white text-xl"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href="#" class="button-color text-lg text-style rounded-lg text-white p-2">Oturum Aç</a>
+              <button class="bg-red-600 text-style text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
+                Oturum Aç
+              </button>
+              <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id">
+                <div class="relative w-auto my-6 mx-auto max-w-5xl">
+                  <!--content-->
+                  <div class="rounded-lg space-x-4 shadow-lg relative flex w-full card-color">
+                    <img class="h-full rounded-l-lg" src="https://bonetflix.com/img/4c0fc516-add8-3885-b174-11c0f870b4ba.webp" alt="">
+              <div class="p-5 items-center">  
+                <div class="flex items-center space-x-52 justify-between">
+                  <h1 class="text-3xl text-style text-white">OTURUM AÇ</h1>
+                  <button class="p-1" onclick="toggleModal('modal-id')">
+                    <img class="h-9" src="https://filmmodu.co/assets/img/icons/close.svg" alt="">
+                  </button>
+               </div>
+                  <div class="flex flex-col justify-center space-y-5 p-5">
+                   <form class="flex flex-col space-y-2">
+                    <span class="text-xl text-style text-white">Kullanıcı Adı</span>
+                    <input class="p-2 text-white rounded-lg card-color border-2 border-gray-500 text-style place" type="text">
+                    <span class="text-xl text-style text-white">Şifre</span>
+                    <input class="p-2 text-white rounded-lg card-color border-2 border-gray-500 text-style place" type="password">
+                </form>
+                <div class="flex items-start space-x-4">
+                  <button class="bg-green-600 text-style text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">Oturum Aç</button>  
+                  <button type="submit" class=" rounded-lg text-xl text-style text-red-500 p-2" ">Kayıt Ol</button>
+                 </div>  
+
+                  </div>
+                </div>       
+                </div> 
+                </div>
+              </div>
+              <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
+         
             </div>  
             <div class="flex lg:hidden block justify-center">
               <div>
@@ -116,9 +148,9 @@
   <a class="flex items-center space-x-2"> 
     <span class="text-lg text-white/40 ">1999 | +18 | Gerilim/Dram</span>
   </a> 
-  <a href="content/fightclub.html" class="button-color rounded-lg text-md text-white text-style p-2">
+  <button class="bg-red-600 text-style text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
     Daha Fazla...
-  </a>
+  </button>
 </a>   
 </div>
   <div class="min-h-screen justify-center items-center space-y-4 p-12">
@@ -126,39 +158,43 @@
  <div class="flex flex-wrap gap-4 items-center"> 
   <div class="w-60 relative group">
     <img class="rounded-lg h-80 w-56" src="https://bonetflix.com/img/4c0fc516-add8-3885-b174-11c0f870b4ba.webp" />
-    <a href="content/fightclub.html" class="opacity-0 drop-shadow-lg rounded-lg group-hover:bg-opacity-90 group-hover:opacity-100 w-56 h-80 duration-300 absolute inset-x-0 bottom-0 flex flex-col space-y-2 justify-center items-center  bg-black">
-      <h1 class="text-style text-left text-white text-xl">Fight Club</h1>
-      <h2 class="text-style text-center text-white/80 text-lg">Oregon Üniversitesi'nde yüksek lisansını yapan Chuck Palahniuk'un uzak olmayan bir gelecekte geçen ve kafası karışık genç bir erkeği konu alan...</h2>
-    <span class="flex items-center space-x-2"> 
-      <img class="w-7" src="img/star.svg">
-      <h1 class="text-style text-white/80 mt-1 text-2xl">9.4</h1>
-    </span> 
+    <a href="" class="opacity-0 drop-shadow-lg rounded-lg group-hover:bg-opacity-90 group-hover:opacity-100 w-56 h-80 duration-300 absolute p-2 flex flex-col justify-center items-center inset-x-0 bottom-0 bg-black">
+      <img class="w-20 absolute" src="https://filmmodu.co/assets/img/icons/play.svg" alt="">
+    <div class="flex space-x-2 mt-60 justify-center items-end"> 
+      <span class="flex items-center space-x-2"> 
+        <h1 class="bg-yellow-600 text-style text-white font-bold uppercase text-lg px-3 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">9.4</h1>
+      </span> 
+      <h1 class="text-style text-left text-white text-2xl">Fight Club</h1>
+    </div>  
     </a>
   </div>
   <div class="w-60 relative group">
     <img class="rounded-lg h-80 w-56" src="https://i.pinimg.com/originals/ab/d7/33/abd733c93545047e5162e5d897741819.jpg" />
-    <a href="" class="opacity-0 drop-shadow-lg rounded-lg group-hover:bg-opacity-90 group-hover:opacity-100 w-56 h-80 duration-300 absolute inset-x-0 bottom-0 flex flex-col space-y-2 justify-center items-center  bg-black">
-      <h1 class="text-style text-left text-white text-xl">Chernobly</h1>
-      <h2 class="text-style text-center text-white/80 text-lg">Chernobyl, 1986 yılında Ukrayna’da Çernobil nükleer santralindeki patlama ve sonrasında yaşananları anlatıyor...</h2>
-    <span class="flex items-center space-x-2"> 
-      <img class="w-7" src="img/star.svg">
-      <h1 class="text-style text-white/80 mt-1 text-2xl">9.4</h1>
-    </span> 
+    <a href="" class="opacity-0 drop-shadow-lg rounded-lg group-hover:bg-opacity-90 group-hover:opacity-100 w-56 h-80 duration-300 absolute p-2 flex flex-col justify-center items-center inset-x-0 bottom-0 bg-black">
+      <img class="w-20 absolute" src="https://filmmodu.co/assets/img/icons/play.svg" alt="">
+    <div class="flex space-x-2 mt-60 justify-center items-end"> 
+      <span class="flex items-center space-x-2"> 
+        <h1 class="bg-yellow-600 text-style text-white font-bold uppercase text-lg px-3 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">9.4</h1>
+      </span> 
+      <h1 class="text-style text-left text-white text-2xl">Chernobly</h1>
+    </div>  
     </a>
   </div>
   
   <div class="w-60 relative group">
     <img class="rounded-lg h-80 w-56" src="https://images-na.ssl-images-amazon.com/images/I/71I1rRWXQeL.jpg" />
-    <a href="" class="opacity-0 drop-shadow-lg rounded-lg group-hover:bg-opacity-90 group-hover:opacity-100 w-56 h-80 duration-300 absolute inset-x-0 bottom-0 flex flex-col space-y-2 justify-center items-center  bg-black">
-      <h1 class="text-style text-left text-white text-xl">The Walking Dead</h1>
-      <h2 class="text-style text-center text-white/80 text-lg">The Walking Dead, aynı adlı çizgi roman serisine dayanmaktadır. Roman, dünya çapında beklenmedik bir biçimde ortaya çıkan esrarengiz bir...</h2>
-    <span class="flex items-center space-x-2"> 
-      <img class="w-7" src="img/star.svg">
-      <h1 class="text-style text-white/80 mt-1 text-2xl">9.4</h1>
-    </span> 
+    <a href="" class="opacity-0 drop-shadow-lg rounded-lg group-hover:bg-opacity-90 group-hover:opacity-100 w-56 h-80 duration-300 absolute p-2 flex flex-col justify-center items-center inset-x-0 bottom-0 bg-black">
+      <img class="w-20 absolute" src="https://filmmodu.co/assets/img/icons/play.svg" alt="">
+    <div class="flex space-x-2 mt-60 justify-center items-end"> 
+      <span class="flex items-center space-x-2"> 
+        <h1 class="bg-yellow-600 text-style text-white font-bold uppercase text-lg px-3 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">9.4</h1>
+      </span> 
+      <h1 class="text-style text-left text-white text-2xl">TWD</h1>
+    </div>  
     </a>
   </div>
 </div>  
 </div>
 </body>
+<script src="index.js"></script>
 </html>
