@@ -65,7 +65,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "vercel build --output public"
+    "build": "npm run"
   },
   "author": "",
   "license": "ISC"
