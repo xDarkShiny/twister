@@ -65,7 +65,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "npm run"
+    "build": "npm run --output public"
   },
   "author": "",
   "license": "ISC"
