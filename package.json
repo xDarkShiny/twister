@@ -18,7 +18,9 @@
     "vite": "^3.0.0"
   },
   "dependencies": {
+    "discord-oauth2-api": "^1.1.2",
     "firebase": "^9.9.1",
-    "svelte-carousel": "^1.0.19"
+    "svelte-carousel": "^1.0.19",
+    "svelte-navigator": "^3.1.6"
   }
 }

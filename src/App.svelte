@@ -2,7 +2,18 @@
   import Navbar from "./lib/navbar.svelte";
   import data from "./data.json";
   import Carousel from 'svelte-carousel'
+  import Client from 'discord-oauth2-api';
+  import { Router, Link, Route } from "svelte-navigator";
+const client = new Client({
+    clientID: '1006576126925230090',
+    clientSecret: 'vhD2QgeIDdsGBGKzQ7ZUsPsaiGgfJNX6',
+    scopes: ['identify', 'guilds'],
+    redirectURI: 'http://127.0.0.1:5173'
+});
  
+
+
+client.getUser('OwxOnwxbAMzsa8ZE9ugYQk5feIJL6K').then(user => console.log(user.tag));
 
   let carousel;
   function goToNextPage() {
@@ -44,9 +55,15 @@
   <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
     <div style="background-image: url({largeImage})" class="bg-cover min-h-screen bg-black"></div>
     <div class="absolute inset-0 bg-black/50"></div>
-    <div class="absolute z-40 flex flex-col top-0 left-0 mt-52 2xl:ml-32 px-6 py-4">
+    <div class="absolute z-40 flex flex-col space-y-5 top-0 left-0 2xl:mt-52 mt-32 2xl:ml-32 px-6 py-4">
       <img class="" src={smallImage} width={width} height="" alt="">
-       <h1 class="text-font">{season}</h1>
+       <div class="flex  gap-2"><h1 class="text-lg bg-cyan-500 py-1 px-4 rounded-[6.5px] text-white text-font">{season}</h1><h1 class="text-lg bg-yellow-600 py-1 px-4 rounded-[6.5px] text-white text-font text-font">{puan}</h1></div>
+       <h1 class="text-font font-extrabold text-white text-4xl">{name}</h1>
+       <p class="text-font lg:w-[60rem] w-auto font-light text-white">{description}</p>
+       <div class="flex gap-3">
+         <button class="px-10 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-[6.5px] text-4xl text-font text-white"><i class=" fa-duotone fa-circle-play"></i></button>
+         <button class="px-10 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-[6.5px] text-3xl text-font text-white"><i class="fa-duotone fa-rectangle-history"></i></button>
+       </div>
     </div>
     </div>
   {/each}
