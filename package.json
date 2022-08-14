@@ -21,6 +21,8 @@
     "discord-oauth2-api": "^1.1.2",
     "firebase": "^9.9.1",
     "svelte-carousel": "^1.0.19",
-    "svelte-navigator": "^3.1.6"
+    "svelte-navigator": "^3.1.6",
+    "twind": "^0.16.17",
+    "utilcomps": "^2.0.4"
   }
 }

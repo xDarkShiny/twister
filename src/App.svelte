@@ -3,9 +3,6 @@
   import Carousel from 'svelte-carousel'
   import { Router, Link, Route } from "svelte-navigator";
   import { onMount } from "svelte";
-import { each } from "svelte/internal";
-  
-
 
 let data
 
@@ -22,8 +19,7 @@ let data
 	})
 
 
-  console.log(data)
-  
+
 
 
 
@@ -65,15 +61,11 @@ autoplayProgressVisible
     <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
       <div style="background-image: url(https://image.tmdb.org/t/p/w600_and_h900_bestv2/{datas.backdrop_path})" class="bg-cover bg-center h-[50rem] bg-black"></div>
       <div class="absolute inset-0 bg-black/80"></div>
-      <div class="absolute z-40 flex flex-col space-y-5 top-0 left-0  mt-16 2xl:ml-32 px-6 py-4">
-        <img class="sm:w-56 w-32 rounded-[6.5px]" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/{datas.poster_path}"  alt="">
-         <div class="flex flex-wrap gap-2"><h1 class="text-lg bg-cyan-500 py-1 px-4 rounded-[6.5px] text-white text-font"><i class="fa-solid fa-star"></i> {datas.vote_average}</h1><h1 class="text-lg bg-yellow-600 py-1 px-4 rounded-[6.5px] text-white text-font text-font"><i class="fa-solid fa-clock"></i> {datas.release_date}</h1></div>
+      <div class="absolute z-40 flex flex-col space-y-5 top-0 left-0  mt-32 2xl:ml-32 px-6 py-4">
+        <img class="sm:w-56 relative w-52 rounded-[6.5px]" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/{datas.poster_path}"  alt="">
+        <div class="flex absolute ml-2 sm:top-72 top-64 flex-wrap gap-2"><h1 class="text-md border-cyan-500 border-2 bg-black bg-opacity-60 py-1 px-2 rounded-[6.5px] text-white text-font"><i class="text-md fa-solid fa-star"></i> {datas.vote_average}</h1><h1 class="text-md border-yellow-600 border-2 bg-black bg-opacity-60 py-1 px-2 rounded-[6.5px] text-white text-font text-font"> {datas.release_date}</h1></div>
          <h1 class="text-font font-extrabold text-white text-4xl">{datas.title}</h1>
-         {#if datas.overview = (datas.overview.length > 100)} 
-          <p class="text-font lg:w-[60rem] w-[15rem] font-light text-white">{datas.overview}</p>
-         {:else if datas.overview.length < 100} 
-          <p class="text-font lg:w-[60rem] w-[15rem] font-light text-white">{datas.overview}</p>
-         {/if}
+         <h1 class="text-font lg:w-[60rem] w-[15rem] text-white text-sm text-ellipsis overflow-hidden truncate sm:text-lg">{datas.overview}</h1>
          <div class="flex gap-3">
            <button class="px-10 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-[6.5px] text-4xl text-font text-white"><i class=" fa-duotone fa-circle-play"></i></button>
            <button class="px-10 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-[6.5px] text-3xl text-font text-white"><i class="fa-duotone fa-rectangle-history"></i></button>
